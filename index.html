@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #0f0f0f;
+    background: #0d0d0d;
     color: white;
 }
 
@@ -17,29 +17,38 @@ header {
     background: black;
     padding: 15px;
     text-align: center;
-    position: sticky;
-    top: 0;
+    border-bottom: 2px solid red;
 }
 
-h1 span {
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header span {
     color: red;
 }
 
 .hero {
-    padding: 60px 20px;
     text-align: center;
-    background: linear-gradient(black, #1a1a1a);
+    padding: 60px 20px;
+    background: linear-gradient(#000, #1a1a1a);
 }
 
 .hero h2 {
-    font-size: 32px;
+    font-size: 36px;
+    color: white;
+}
+
+.hero p {
+    color: #ccc;
 }
 
 .btn {
     background: red;
+    color: white;
     padding: 15px 25px;
     text-decoration: none;
-    color: white;
     border-radius: 5px;
     display: inline-block;
     margin-top: 20px;
@@ -66,35 +75,35 @@ h1 span {
 
 .gallery img {
     width: 90%;
-    max-width: 300px;
+    max-width: 280px;
     margin: 10px;
     border-radius: 10px;
 }
 
-.testimonial {
-    background: #1a1a1a;
-    margin: 10px auto;
-    padding: 15px;
-    border-radius: 8px;
-    max-width: 400px;
+.highlight {
+    background: red;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 footer {
     background: black;
     padding: 20px;
     text-align: center;
+    border-top: 2px solid red;
 }
 
 .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: green;
+    background: #25D366;
     color: white;
     padding: 15px;
     border-radius: 50%;
-    text-decoration: none;
     font-size: 20px;
+    text-decoration: none;
 }
 </style>
 </head>
@@ -102,13 +111,19 @@ footer {
 <body>
 
 <header>
+    <img src="logo.png" alt="SYSTEM Dr Logo" style="height:60px;">
     <h1>SYSTEM <span>Dr</span></h1>
+    <p>Fast & Reliable Repairs</p>
 </header>
 
 <div class="hero">
     <h2>We Fix It, You Relax!</h2>
-    <p>Professional Repairs by Frank Kanyiri</p>
-    <a class="btn" href="https://wa.me/254708249823">Contact on WhatsApp</a>
+    <p>Professional Electronics Repair by Frank Kanyiri</p>
+    <a class="btn" href="https://wa.me/254708249823">Chat on WhatsApp</a>
+</div>
+
+<div class="highlight">
+    TV • Phones • Woofers • Amplifiers
 </div>
 
 <div class="section">
@@ -123,19 +138,15 @@ footer {
 
 <div class="section gallery">
     <h2>Our Work</h2>
-    <img src="https://via.placeholder.com/300" alt="Repair work">
-    <img src="https://via.placeholder.com/300" alt="Repair work">
-</div>
-
-<div class="section">
-    <h2>Customer Reviews</h2>
-    <div class="testimonial">"Great service, fixed my TV fast!"</div>
-    <div class="testimonial">"Very reliable and affordable."</div>
+    <img src="tv-repair.jpg" alt="TV Repair">
+<img src="phone-repair.jpg" alt="Phone Repair">
+<img src="woofer.jpg" alt="Woofer Repair">
+<img src="amplifier.jpg" alt="Amplifier Repair">
 </div>
 
 <div class="section">
     <h2>Contact Us</h2>
-    <p>📞 +254 708 249823</p>
+    <p><strong>📞 +254 708 249823</strong></p>
     <p>📍 Nairobi, Kenya</p>
 </div>
 
